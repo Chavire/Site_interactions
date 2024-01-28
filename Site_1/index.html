@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!--commentaire-->
+<html lang="en">
+<head> <!--On ouvre la balise head-->
+    <meta charset="UTF-8"> <!--Encodage, tout ce qui est caractère spéciaux-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aubrac Corner</title> <!--Titre de l'onglet du navigateur-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="img/LOGO_AUBRAC_SANSFOND.png">
+    <link rel="arriereplan" type="image/png" href="img/photo_restaurant.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/package.json"></script>
+    <script src="js/sandbox.config.json"></script>
+</head> <!--On ferme la balise head-->
+
+
+<!--
+Div qui regroupe tout = Zoning
+    DIV Haut
+        Header
+        Nav
+    Main
+        DIV Affiches Café
+            DIV - Nouveauté
+            DIV - Moment
+            DIV - Recommandation
+            DIV - Best-Seller
+        DIV Présentation
+            DIV - Texte de présentation de la marque
+    DIV Bas
+        Footer
+-->
+
+
+
+<body> <!--La balise body contient tout ce qui est sur le site-->
+    <div id="zoning">
+        <div id="haut">
+            <header>
+                <img src="img/aubrac_nom_complet.png" alt="aubrac_nom_complet">
+                <h1> AUBRAC CORNER</h1>
+                <h3><a href="formulaire.html" class="lien">Écrire un Avis</a></h3>
+            </header>
+            <nav>
+                <img src="img/LOGO_AUBRAC_SANSFOND.png" alt="LOGO">
+                <div id="accueil">
+                    <h2><a href="index.html" class="lien">Accueil</a></h2>
+                </div>
+                <div id="menu">
+                    <h2><a href="menu.html" class="lien">Menu</a></h2>
+                </div>
+                <div id="ambiance">
+                    <h2>Ambiance et Salles</h2>
+                </div>
+                <div id="contact">
+                    <h2>Contact</h2>
+                </div>
+                <div id="nous_trouver">
+                    <h2><a href="noustrouver.html" class="lien">Nous Trouver</a></h2>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <div id="affiches">
+                <div id="specialite">
+                    <h2>Spécialité</h2>
+                </div>
+                
+                <div id="moment">
+                    <h2>Moment</h2>
+                </div>
+                
+                <div id="recommandation">
+                    <h2>Recommandation</h2>
+                </div>
+                
+                <div id="best-seller">
+                    <h2>Best-Seller</h2>
+                </div>
+            </div>
+        </main>
+        <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+        speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+        <div slot="container-start" class="parallax-bg"
+        style="background-image: url(img/photo_restaurant.jpg);" data-swiper-parallax="-23%"></div>
+    
+    <swiper-slide>
+        <div class="title" data-swiper-parallax="-300"><h3>Présentation du Restaurant</h3></div>
+        <div class="text" data-swiper-parallax="-100">
+        <p>
+            <h4>Ce fast-food français, créé par un éleveur restaurateur, propose des produits labellisés de qualité et garantissant une éthique irréprochable ! Au menu, des burgers, des salades, des saucisses, des tartares…. L'Aubrac Corner est le premier fast-food aveyronnais de la capitale qui promet de vous régaler à quelques pas de la Grande Arche ! Le soir, le restaurant se transforme pour laisser place à une ambiance afterwork, avec bières à foison et table de billard prise d’assaut !</h4>
+        </p>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="title" data-swiper-parallax="-300"><h3>Dernière Annonce</h3></div>
+        <div class="text" data-swiper-parallax="-100">
+        <p>
+            <h4>Nous vous informons qu'en raison de travaux notre salle au sous sol est fermé ainsi que l'accès au toilettes. Merci de votre compréhension. Nous avons en revanche une agréable terrasse et quelques tables au RDC pour déguster votre repas !</h4>
+        </p>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="title" data-swiper-parallax="-300"><h3>Plat du jour</h3></div>
+        <div class="text" data-swiper-parallax="-100">
+        <p>
+            <h4>La lasagne carbonara avec salade mesclun est le plat du jour proposé au prix de 9€40.
+            La lasagne carbonara est un délicieux plat italien composé de pâtes lasagnes, de bacon croustillant, de beurre, d'ail et de farine.
+            La salade mesclun est une salade mélangée qui apporte une fraîcheur et une légèreté à ce plat.
+            C'est un choix parfait pour un déjeuner ou un dîner savoureux.
+            La combinaison des saveurs riches de la carbonara avec la fraîcheur de la salade mesclun crée un équilibre délicieux.
+            Profitez de ce plat du jour pour vous régaler avec cette délicieuse lasagne carbonara accompagnée d'une salade mesclun.
+            Bon appétit !</h4>
+        </p>
+        </div>
+    </swiper-slide>
+    </swiper-container>
+                <div id="bas">
+            <footer>
+                <h3>Bar au 36 Boulevard de Pesaro, 92000 Nanterre</h3>
+                <h3><span class="policegras">Réservation au : 01 43 33 48 59</span></h3>
+            </footer>
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>

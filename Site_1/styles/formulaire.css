@@ -1,0 +1,297 @@
+/*
+Commentaire
+*/
+
+/*
+Pour une image qui occupe toute la place de la boite :
+div{
+    background-image: url(../);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
+body{
+max-width: 100%;
+    background-color: black;
+    background-image: url("../img/photo_restaurant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: lighter;
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-family: cursive;
+}
+h3{
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3 span{
+    font-weight: bold;
+    color: rgb(158, 158, 158);
+}
+
+h4{
+    color: aliceblue;
+}
+.paspoint{
+    list-style-type: none; /*Retire la puce grâce à la valeur "none"*/
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+}
+#affiches h2{
+    background-color: rgba(139, 53, 0, 0.462);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+}
+
+#zoning{
+    width: 100vw;
+    margin: 0 auto;
+    border: 0px solid;
+}
+
+#haut{
+    align-content: start;
+    align-items: stretch;
+}
+
+header{
+    background-color: #392E2C;
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width:10%; /* taille max de l'image */
+    height:auto; /* ratio L/l de l'image */
+    margin-right: 30%; /* Marge à droite de l'img*/
+}
+
+header h3{
+    max-width:10%; /* taille max */
+    margin-left: 25%;
+    margin-right: 5%;
+    background-color: rgba(255, 211, 184, 0.462);
+    border-radius: 1px;
+    width: 70%;
+}
+
+nav{
+    background-color: rgba(24, 24, 24, 0.66);
+    min-height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-decoration: underline; /* Sous-ligné */
+    color: aliceblue;
+}
+nav img{
+    max-width:4%; /* taille max de l'image */
+    height:auto; /* ratio L/l de l'image, auto garde le ratio d'origine */
+    margin-left: 3%; /* Marge à gauche de l'img*/
+}
+
+form {
+    background-color: #ffddb0; /* Couleur de fond du formulaire */
+    padding: 20px; /* Ajoute un espacement autour du formulaire */
+    border-radius: 10px; /* Ajoute des coins arrondis au formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    max-width: 500px; /* Définit la largeur maximale du formulaire */
+    margin: auto; /* Centre le formulaire sur la page */
+    margin-top: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    background-color: #ffecd9; /* Couleur de fond orangée pour les zones de texte */
+    border: 1px solid #ccc; /* Ajoute une bordure légère */
+    padding: 8px; /* Ajoute de l'espacement à l'intérieur des zones de texte */
+    margin-bottom: 10px; /* Ajoute de l'espacement entre les zones de texte */
+    width: 100%; /* Force la largeur à 100% pour occuper la largeur du conteneur */
+    box-sizing: border-box; /* Inclut la bordure et le rembourrage dans la largeur et la hauteur */
+}
+#bt {
+    background-color: #ffddb0; /* Couleur de fond orangée */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 10px 20px; /* Ajoute de l'espacement intérieur */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    font-size: 16px; /* Taille de la police */
+    transition: background-color 0.3s ease; /* Ajoute une transition douce sur la couleur de fond */
+    margin-left: auto; /* Aligne le bouton à droite */ 
+}
+#bt:hover {
+    background-color: #ffbb80; /* Changement de couleur au survol */
+}
+
+div{
+    width: 100%;
+}
+
+footer{
+    background-color: rgba(24, 24, 24, 0.661);
+    text-align: center;
+    bottom:0;  /* on le colle en bas */
+    width:100%;
+    height:70px;   /* Hauteur du pied de page */
+    margin-top: 10%;
+}
+.lien{
+color: aliceblue;
+}
+/*
+Arrondir les rebords :
+border-radius
+*/
+
+
+
+.error {
+    animation: blink 1.5s; /* Animation pour faire clignoter en rouge */
+}
+
+@keyframes blink {
+    25% {
+        color: rgb(255, 0, 0); /* Changement de couleur du texte */
+    }
+    50% {
+        color: rgb(0, 0, 0); /* Changement de couleur du texte */
+    }
+    75% {
+        color: rgb(255, 0, 0); /* Changement de couleur du texte */
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){/* Nouvelles règles si la fenêtre fait  1024px de large ou moins */    *{
+
+    
+    html{
+        background-color: #392E2C;
+        display: flex;
+        flex-direction: column;
+    }
+    }
+    title{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        display: none;
+    }
+    header img{
+        max-width:40%; /* taille max de l'image */
+        height:auto; /* ratio L/l de l'image */
+        margin-right: 0%;
+    }
+    nav img{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    footer{
+        height: 0%;
+        align-items: flex-start;
+    }
+    footer h3{
+        align-items:center;
+    }
+    .pc{
+        display: none;
+    }
+    footer{
+        margin-top: 10;
+        align-items: center;
+    }
+}
+
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(24, 24, 24, 0.66);
+    color: white;
+}
+
+/* Styles pour l'icône du menu burger */
+.burger-menu {
+    cursor: pointer;
+    display: none; /* Masqué par défaut sur les écrans plus larges */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s; /* Animation de transition pour les barres du burger */
+}
+
+/* Styles pour la liste de navigation */
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styles spécifiques pour les écrans plus petits (moins de 600px) */
+@media only screen and (max-width: 600px) {
+    .burger-menu {
+        display: block; /* Affiché sur les écrans plus petits */
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(24, 24, 24, 0.66);
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}

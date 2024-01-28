@@ -1,0 +1,260 @@
+/*
+Commentaire
+*/
+
+/*
+Pour une image qui occupe toute la place de la boite :
+div{
+    background-image: url(../);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*/
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    font-size: 18px;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+body{
+max-width: 100%;
+    background-image: url("../img/photo_restaurant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: lighter;
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-family: cursive;
+}
+h3{
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3 span{
+    font-weight: bold;
+    color: rgb(158, 158, 158);
+}
+
+h4{
+    color: aliceblue;
+}
+.paspoint{
+    list-style-type: none; /*Retire la puce grâce à la valeur "none"*/
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+}
+#affiches h2{
+    background-color: rgba(139, 53, 0, 0.462);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+}
+
+#zoning{
+    width: 100vw;
+    margin: 0 auto;
+    border: 0px solid;
+}
+
+#haut{
+    align-content: start;
+    align-items: stretch;
+}
+
+header{
+    background-color: #392E2C;
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width:10%; /* taille max de l'image */
+    height:auto; /* ratio L/l de l'image */
+    margin-right: 30%; /* Marge à droite de l'img*/
+}
+
+header h3{
+    max-width:10%; /* taille max */
+    margin-left: 25%;
+    margin-right: 5%;
+    background-color: rgba(255, 211, 184, 0.462);
+    border-radius: 1px;
+    width: 70%;
+}
+
+nav{
+    background-color: rgba(24, 24, 24, 0.66);
+    min-height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+nav img{
+    max-width:4%; /* taille max de l'image */
+    height:auto; /* ratio L/l de l'image, auto garde le ratio d'origine */
+    margin-left: 3%; /* Marge à gauche de l'img*/
+}
+nav h2{
+    text-decoration: underline; /* Sous-ligné */
+    color: aliceblue;
+}
+#affiches{
+    display: flex;
+    width: 85%;
+    min-height: 50vw; /* Taille de la case */
+    margin-left: 10%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+#specialite{
+    background-image: url(../img/aubrac_plat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+#moment{
+    background-image: url(../img/aubrac_tappas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+#recommandation{
+    background-image: url(../img/aubrac_planche.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 45%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+#best-seller{
+    background-image: url(../img/aubrac_biere.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 45%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+div{
+    width: 100%;
+}
+
+#presentation{
+    font-family: cursive;
+}
+#presentation h2{ /* uniquement le h2 présent dans cette zone */
+    color:white;
+    font-family: cursive;
+    text-decoration: overline; /* Ligne au dessus */
+}
+footer{
+    background-color: rgba(24, 24, 24, 0.661);
+    text-align: center;
+    bottom:0;  /* on le colle en bas */
+    width:100%;
+    height:70px;   /* Hauteur du pied de page */
+    margin-top: 10%;
+}
+.lien{
+color: aliceblue;
+}
+/*
+Arrondir les rebords :
+border-radius
+*/
+
+@media screen and (max-width: 1024px){/* Nouvelles règles si la fenêtre fait  1024px de large ou moins */    *{
+
+    
+    html{
+        background-color: #392E2C;
+        display: flex;
+        flex-direction: column;
+    }
+    #affiches{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #affiches h2{
+        font-size:medium;
+    }
+    #affiches h4{
+        display: none;
+    }
+    }
+    title{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        display: none;
+    }
+    header img{
+        max-width:40%; /* taille max de l'image */
+        height:auto; /* ratio L/l de l'image */
+        margin-right: 0%;
+    }
+    nav img{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    footer{
+        height: 0%;
+        align-items: flex-start;
+    }
+    footer h3{
+        align-items:center;
+    }
+    .pc{
+        display: none;
+    }
+    #titregps{
+        font-size: small;
+    }
+    footer{
+        margin-top: 10;
+        align-items: center;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!--commentaire-->
+<html lang="en">
+<head> <!--On ouvre la balise head-->
+    <meta charset="UTF-8"> <!--Encodage, tout ce qui est caractère spéciaux-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aubrac Corner</title> <!--Titre de l'onglet du navigateur-->
+    <link rel="stylesheet" href="styles/formulaire.css">
+    <link rel="icon" type="image/png" href="img/LOGO_AUBRAC_SANSFOND.png">
+    <link rel="arriereplan" type="image/png" href="img/photo_restaurant.jpg">
+</head> <!--On ferme la balise head-->
+
+<body> <!--La balise body contient tout ce qui est sur le site-->
+    <div id="zoning">
+        <div id="haut">
+            <header>
+                <img src="img/aubrac_nom_complet.png" alt="aubrac_nom_complet">
+                <h1> AUBRAC CORNER</h1>
+            </header>
+            <nav>
+                <div class="menu-container">
+                    <!-- Icône du menu burger -->
+                    <div class="burger-menu" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <!-- Liste des liens de navigation -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#">Ambiance et Salles</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="noustrouver.html">Nous Trouver</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <form id="monFormulaire" action="" method="">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <!-- Champ de texte simple -->
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+            
+                    <!-- Champ de texte pour l'e-mail -->
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- Champ de texte pour le mot de passe -->
+                    <label for="motDePasse">Mot de passe :</label>
+                    <input type="password" id="motDePasse" name="motDePasse" required>
+                    <!-- Affiche un message d'erreur pour le mot de passe -->
+                    <p id="motDePasseError" class="error"></p>
+                    <!-- Boutons radio -->
+                    <label for="genre">Genre :</label>
+                    <input type="radio" id="homme" name="genre" value="homme">
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="genre" value="femme">
+                    <label for="femme">Femme</label>
+                    <input type="radio" id="autre" name="genre" value="autre">
+                    <label for="autre">Autre</label>
+                    <!-- Affiche un message d'erreur pour le genre -->
+                    <p id="genreError" class="error"></p>
+                    
+                    <!-- Case à cocher -->
+                    <input type="checkbox" id="abonnement" name="abonnement" value="s'abonner">
+                    <label for="abonnement">S'abonner à la newsletter</label>
+                    
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Commentaire sur le restaurant</legend>
+                    <!-- Zone de texte -->
+                    <label for="commentaire">Commentaire :</label>
+                    <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea>
+                    <!-- Menu déroulant (select) -->
+                    <label for="note">Note :</label>
+                    <select id="note" name="note">
+                        <option value="5*">5 Etoiles</option>
+                        <option value="4*">4 Etoiles</option>
+                        <option value="3*">3 Etoiles</option>
+                        <option value="2*">2 Etoiles</option>
+                        <option value="1*">1 Etoile</option>
+                    </select>
+                </fieldset>
+            
+                <!-- Input de type submit pour le bouton de soumission -->
+                <input type="button" value="Envoyer" id="bt">
+            </form>
+        </main>
+        <div id="bas">
+            <footer>
+                <h3>Bar au 36 Boulevard de Pesaro, 92000 Nanterre</h3>
+                <h3><span class="policegras">Réservation au : 01 43 33 48 59</span></h3>
+                <button>Passer en Darkmode</button>
+            </footer>
+        </div>
+    </div>
+    <script src="js/formulaire.js"></script>
+</body>
